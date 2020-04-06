@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>申领测试机</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+
+<body style="display:none;">
+    <script type="text/javascript">
+        var lxUtil = (function () {
+            return {
+                /**
+                 * @desc 查询url中字符串的值
+                 * @arg {string} str 查询字符串
+                 * @arg {boolean} igonore 是否忽略大小写，true 忽略；false不忽略；默认不忽略
+                 */
+                queryUrl: function (str, ignore) {
+                    var t = '',
+                        n;
+                    var reg = ignore ? 'gi' : 'g';
+                    var loc = window.location;
+                    decodeURIComponent(loc.hash ? loc.hash : loc.search).toString().replace(new RegExp('[?&]' + str + '=[^&]+', reg), function (r) {
+                        n = r.split('=')[1];
+                        n && (t = n);
+                    });
+                    return t;
+                }
+            }
+        }());
+        var ua = navigator.userAgent.toLocaleLowerCase();
+        if (/micromessenger/.test(ua)) {
+            var url = 'http%3a%2f%2f' + window.location.host + window.location.pathname.replace(/\//g, "%2f").replace(/main.html/, "index.html")+ '%3fphoneID%3d' + lxUtil.queryUrl('phoneID')+'%26borrowAccount%3d' + lxUtil.queryUrl("borrowAccount");
+            window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx318d7b4b623a5066&redirect_uri=' + url +
+                '&response_type=code&scope=snsapi_userinfo&state=123&component_appid=wxdbf33fa3261aef17#wechat_redirect';
+        } else {
+            // window.location.href = window.location.href.replace(/main.html/, 'index.html');
+        }
+    </script>
+</body>
+
+</html>

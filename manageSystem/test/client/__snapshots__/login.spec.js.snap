@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should have the expected html structure 1`] = `
+<div
+  class="login_page fillcontain"
+>
+  <section
+    class="form_contianer"
+    mode="in-out"
+    name="form-fade"
+    style=""
+  >
+    <div
+      class="manage_tip"
+    >
+      <p>
+        测试机管理系统
+      </p>
+    </div>
+     
+    <form
+      class="el-form"
+    >
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="域账号"
+              type="text"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="密码"
+              type="password"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="el-form-item"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <button
+            class="el-button submit_btn el-button--primary"
+            type="button"
+          >
+            <!---->
+            <!---->
+            <span>
+              登陆
+            </span>
+          </button>
+          <!---->
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+`;
+
+exports[`快照测试 1`] = `
+<div
+  class="login_page fillcontain"
+>
+  <section
+    class="form_contianer"
+    mode="in-out"
+    name="form-fade"
+    style=""
+  >
+    <div
+      class="manage_tip"
+    >
+      <p>
+        测试机管理系统
+      </p>
+    </div>
+     
+    <form
+      class="el-form"
+    >
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="域账号"
+              type="text"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="密码"
+              type="password"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="el-form-item"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <button
+            class="el-button submit_btn el-button--primary"
+            type="button"
+          >
+            <!---->
+            <!---->
+            <span>
+              登陆
+            </span>
+          </button>
+          <!---->
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+`;
