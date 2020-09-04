@@ -37,7 +37,7 @@
     "pako": "^1.0.6",
     "pm2": "^2.10.1",
     "qrcodejs2": "^0.0.2",
-    "sequelize": "^3.29.0",
+    "sequelize": "^6.3.5",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
     "supertest": "^3.0.0",
